@@ -1,0 +1,8 @@
+# Ignore pasta de build e arquivos de configuração do Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.log
+*.cache
