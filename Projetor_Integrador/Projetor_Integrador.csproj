@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFBAB24E-DA33-481E-9556-EECC888B576D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projetor_Integrador</RootNamespace>
+    <AssemblyName>Projetor_Integrador</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classes\db.cs" />
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstoque.Designer.cs">
+      <DependentUpon>FrmEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFornecedor.Designer.cs">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMarketplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMarketplace.Designer.cs">
+      <DependentUpon>FrmMarketplace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisa.designer.cs">
+      <DependentUpon>frmPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRVenda.Designer.cs">
+      <DependentUpon>FrmRVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVenda.Designer.cs">
+      <DependentUpon>FrmVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstoque.resx">
+      <DependentUpon>FrmEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFornecedor.resx">
+      <DependentUpon>frmFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMarketplace.resx">
+      <DependentUpon>FrmMarketplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisa.resx">
+      <DependentUpon>frmPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRVenda.resx">
+      <DependentUpon>FrmRVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVenda.resx">
+      <DependentUpon>FrmVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\bluebee.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\1000139051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Office-Girl.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Instagram-3.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\facebook.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\novo24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\save24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\novo.72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\pesqui.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\delete.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Print.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\WhatsApp Image 2024-06-05 at 09.24.23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\WhatsApp Image 2024-10-15 at 21.10.49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\WhatsApp Image 2024-10-15 at 20.55.18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\WhatsApp Image 2024-06-16 at 10.02.50 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\WhatsApp Image 2024-06-05 at 08.58.49.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Carrinho de compras e fundo de caixa de presente renderização em 3D _ imagem Premium gerada com IA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Destaques para recebidos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\baixados.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\pesquisar.imagem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\Marketplace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagens\WhatsApp Image 2024-10-26 at 19.44.27.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
